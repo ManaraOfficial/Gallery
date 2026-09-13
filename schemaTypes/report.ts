@@ -12,19 +12,6 @@ export default defineType({
       validation: (Rule) => Rule.required(),
     }),
     defineField({
-      name: 'category',
-      title: 'Category',
-      type: 'string',
-      options: {
-        list: [
-          { title: 'Curious Minds', value: 'curious-minds' },
-          { title: 'Project 28', value: 'project28' },
-          { title: 'Sponsorship', value: 'sponsorship' },
-        ],
-      },
-      validation: (Rule) => Rule.required(),
-    }),
-    defineField({
       name: 'publishedDate',
       title: 'Published Date',
       type: 'date',
